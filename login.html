@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in · Event Desk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-shell">
+    <div class="login-art">
+      <img src="img/login-art.svg" alt="Illustration of stacked event tickets">
+    </div>
+    <div class="login-panel">
+      <div class="login-card">
+        <div class="brand">
+          <img src="img/brand-mark.svg" alt="" width="34" height="34">
+          <span class="brand-name">Event Desk</span>
+        </div>
+        <h1>Welcome back</h1>
+        <p class="sub">Sign in to manage events, attendees, and registrations.</p>
+
+        <div id="flash-slot"></div>
+
+        <form id="login-form" class="form-grid" novalidate>
+          <div class="field">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" autocomplete="username" required>
+            <div class="error-msg" id="err-username"></div>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" autocomplete="current-password" required>
+            <div class="error-msg" id="err-password"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </form>
+
+        <div class="login-hint">
+          Demo account — username: <strong>admin</strong> · password: <strong>admin123</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

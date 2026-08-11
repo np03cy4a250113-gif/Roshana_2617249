@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendees · Event Desk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-slot"></div>
+
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <p class="eyebrow">Event Desk</p>
+          <h1 class="page-title">Attendees</h1>
+          <p class="page-sub">Everyone on file, across every event.</p>
+        </div>
+        <a href="attendee-form.html" class="btn btn-primary">+ New attendee</a>
+      </div>
+
+      <div id="flash-slot"></div>
+
+      <div class="toolbar">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="search-input" placeholder="Search attendees by name…">
+        </div>
+        <span class="count-pill" id="count-pill">0 attendees</span>
+      </div>
+
+      <div id="attendees-slot"></div>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/attendees.js"></script>
+</body>
+</html>

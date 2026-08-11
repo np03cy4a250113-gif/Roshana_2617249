@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event form · Event Desk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-slot"></div>
+
+    <main class="main">
+      <a href="events.html" class="btn btn-ghost btn-sm" style="margin-bottom:18px;">&larr; All events</a>
+
+      <div class="page-head">
+        <div>
+          <p class="eyebrow" id="form-eyebrow">Event Desk</p>
+          <h1 class="page-title" id="form-title">New event</h1>
+          <p class="page-sub">Fill in the details below. Fields marked required must be completed.</p>
+        </div>
+      </div>
+
+      <div id="flash-slot"></div>
+
+      <div class="card card-pad">
+        <form id="event-form" class="form-grid" novalidate>
+          <div class="field">
+            <label for="name">Event name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" maxlength="120" required>
+            <div class="error-msg" id="err-name"></div>
+          </div>
+
+          <div class="field">
+            <label for="description">Description</label>
+            <textarea id="description" maxlength="600" placeholder="What's this event about?"></textarea>
+            <div class="error-msg" id="err-description"></div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="field">
+              <label for="date">Date <span aria-hidden="true">*</span></label>
+              <input type="date" id="date" required>
+              <div class="error-msg" id="err-date"></div>
+            </div>
+            <div class="field">
+              <label for="time">Time <span aria-hidden="true">*</span></label>
+              <input type="time" id="time" required>
+              <div class="error-msg" id="err-time"></div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="location">Location <span aria-hidden="true">*</span></label>
+            <input type="text" id="location" maxlength="160" required>
+            <div class="error-msg" id="err-location"></div>
+          </div>
+
+          <div class="field" id="registration">
+            <label>Registered attendees</label>
+            <div class="hint" id="attendee-hint">Check everyone who should be registered for this event.</div>
+            <div class="checkbox-list" id="attendee-checklist"></div>
+          </div>
+
+          <div class="form-actions">
+            <a href="events.html" class="btn btn-ghost">Cancel</a>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Save event</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/event-form.js"></script>
+</body>
+</html>

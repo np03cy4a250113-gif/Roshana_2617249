@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendee form · Event Desk</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-slot"></div>
+
+    <main class="main" style="max-width:640px;">
+      <a href="attendees.html" class="btn btn-ghost btn-sm" style="margin-bottom:18px;">&larr; All attendees</a>
+
+      <div class="page-head">
+        <div>
+          <p class="eyebrow" id="form-eyebrow">Event Desk</p>
+          <h1 class="page-title" id="form-title">New attendee</h1>
+          <p class="page-sub">Fields marked required must be completed.</p>
+        </div>
+      </div>
+
+      <div id="flash-slot"></div>
+
+      <div class="card card-pad">
+        <form id="attendee-form" class="form-grid" novalidate>
+          <div class="field">
+            <label for="name">Full name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" maxlength="120" required>
+            <div class="error-msg" id="err-name"></div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" maxlength="160" required>
+            <div class="error-msg" id="err-email"></div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" maxlength="30" placeholder="555-123-4567" required>
+            <div class="error-msg" id="err-phone"></div>
+          </div>
+
+          <div class="form-actions">
+            <a href="attendees.html" class="btn btn-ghost">Cancel</a>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Save attendee</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/attendee-form.js"></script>
+</body>
+</html>

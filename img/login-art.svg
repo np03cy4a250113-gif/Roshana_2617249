@@ -1,0 +1,34 @@
+<svg viewBox="0 0 520 640" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="640" fill="#14524F"/>
+  <g opacity="0.08">
+    <circle cx="80" cy="90" r="140" fill="#EDF1EF"/>
+    <circle cx="470" cy="560" r="180" fill="#EDF1EF"/>
+  </g>
+
+  <!-- stacked tickets -->
+  <g transform="translate(70,150) rotate(-8)">
+    <rect x="0" y="0" width="360" height="130" rx="10" fill="#0F433F"/>
+  </g>
+  <g transform="translate(85,190) rotate(4)">
+    <rect x="0" y="0" width="360" height="130" rx="10" fill="#E4A72E"/>
+    <circle cx="0" cy="65" r="12" fill="#14524F"/>
+    <circle cx="360" cy="65" r="12" fill="#14524F"/>
+    <line x1="230" y1="14" x2="230" y2="116" stroke="#14524F" stroke-width="2" stroke-dasharray="4 5"/>
+    <text x="30" y="45" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#1C2321" font-weight="700">ADMIT ONE</text>
+    <text x="30" y="78" font-family="Courier New, monospace" font-size="15" fill="#1C2321">ANNUAL SUMMIT</text>
+    <text x="30" y="100" font-family="Courier New, monospace" font-size="13" fill="#1C2321">GATE 04 · SEAT 128</text>
+    <text x="255" y="55" font-family="Courier New, monospace" font-size="13" fill="#1C2321">NO.</text>
+    <text x="255" y="80" font-family="Georgia, serif" font-size="22" fill="#1C2321" font-weight="700">0091</text>
+  </g>
+  <g transform="translate(60,340) rotate(-3)">
+    <rect x="0" y="0" width="360" height="90" rx="10" fill="#B84C33"/>
+    <circle cx="0" cy="45" r="10" fill="#14524F"/>
+    <circle cx="360" cy="45" r="10" fill="#14524F"/>
+    <line x1="230" y1="10" x2="230" y2="80" stroke="#14524F" stroke-width="2" stroke-dasharray="4 5"/>
+    <text x="26" y="40" font-family="Georgia, serif" font-size="18" fill="#F1EFE7" font-weight="700">WORKSHOP</text>
+    <text x="26" y="63" font-family="Courier New, monospace" font-size="12" fill="#F1EFE7">ROOM B · 2:00 PM</text>
+  </g>
+
+  <text x="60" y="500" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#EDF1EF" font-weight="700">Every event,</text>
+  <text x="60" y="540" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#E4A72E" font-weight="700">one clipboard.</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="40" y="40" width="220" height="150" rx="10" fill="#E9E4D6" stroke="#D8DED9" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle cx="40" cy="115" r="9" fill="#EDF1EF" stroke="#D8DED9" stroke-width="2"/>
+  <circle cx="260" cy="115" r="9" fill="#EDF1EF" stroke="#D8DED9" stroke-width="2"/>
+  <line x1="150" y1="55" x2="150" y2="175" stroke="#D8DED9" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="150" y="100" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#B9B2A0">?</text>
+  <text x="150" y="140" text-anchor="middle" font-family="Courier New, monospace" font-size="13" fill="#9A9384">NO EVENTS YET</text>
+</svg>
